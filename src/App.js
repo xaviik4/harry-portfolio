@@ -1,4 +1,5 @@
 // harry-portfolio/src/App.js
+import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './sections/Home';

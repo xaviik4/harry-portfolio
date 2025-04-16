@@ -2,8 +2,8 @@
 import React from 'react';
 
 const projects = [
-  { title: 'Genentech Forms', description: 'Streamlined support forms using ServiceNow.' },
-  { title: 'VR Therapy Research', description: 'Built proposal for using VR in social anxiety therapy.' },
+  { title: 'Being built...', description: '...' },
+  // { title: 'VR Therapy Research', description: 'Built proposal for using VR in social anxiety therapy.' },
 ];
 
 const Projects = () => {

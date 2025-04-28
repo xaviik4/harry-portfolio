@@ -48,15 +48,18 @@ const About = () => {
     <div className="fun-facts">
       <h3>Outside the Lab...</h3>
       <p>
-        I enjoy working out, hiking around Oregon, playing and watching basketball.
-        I’m also deep into photography and building my own creative process through tech and art.
+        I enjoy working out, hiking around Oregon, and playing and watching basketball. 
+        I’m passionate about photography and building my own creative process through tech and art. 
+        Music is a huge part of my life too, it's helped shape how I think creatively. 
+        Being Puerto Rican, staying connected to my roots has always been important to me. 
+        Outside of that, I’m big on self-improvement, whether it’s learning new tech skills, pushing myself physically, or chasing creative challenges.
       </p>
     </div>
         <div className="about-cta">
           <p>
-            I’m currently looking for internships in energy systems and automation.
-            I'm always looking for new challenges and chances to grow, whether it's building, learning, or collaborating. 
-            Let's make something great together!
+            I’m passionate about energy systems, automation, and using technology to build creative solutions. 
+            I’m always looking for new challenges and chances to grow, whether it’s building, learning, or collaborating. 
+            Always excited to connect, create, and keep learning.
           </p>
         </div>
       </div>

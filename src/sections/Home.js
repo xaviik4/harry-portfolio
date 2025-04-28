@@ -15,7 +15,9 @@ const Home = () => {
       <p>Engineering student passionate about automation, energy, and impactful systems.</p>
 
       <div className="cta-buttons">
-        <a href="/resume.pdf" className="btn">View Resume</a>
+        <a href="/assets/resume_web.pdf" className="btn" target="_blank" rel="noopener noreferrer">
+          View Resume
+        </a>
         <a href="#projects" className="btn secondary">See Projects</a>
       </div>
 

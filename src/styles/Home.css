@@ -1,84 +1,106 @@
-/* harry-portfolio/src/styles/Home.css */
-
 .home-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 1rem;
-    text-align: center;
-    min-height: 100vh;
-    background: #f4f4f4; /* Light background – adjust as needed */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0f, #1a1a2e);
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
 }
-  
-  /* Logo styling */
-  .home-logo {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  
-/* Headline and text */
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+
+/* Profile image */
+.home-logo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 224, 255, 0.6);
+  box-shadow: 0 0 20px rgba(0, 224, 255, 0.2);
+  margin-bottom: 1.5rem;
 }
-  
-p {
-    font-size: 1.1rem;
-    color: #333;
-    max-width: 600px;
-    margin-bottom: 0.75rem;
+
+/* Text hierarchy */
+.home-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 0 8px rgba(0, 224, 255, 0.4);
 }
-  
-/* CTA buttons */
+
+.home-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #8bbdd9;
+  margin-bottom: 0.5rem;
+}
+
+.home-description {
+  font-size: 1rem;
+  color: #dcdcdc;
+  max-width: 600px;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
 .cta-buttons {
-    margin-top: 1rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
-  
+
 .btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 8px;
-    background-color: #1e90ff;
-    color: white;
-    transition: background 0.3s ease;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
-  
-.btn:hover {
-    background-color: #0d6efd;
+
+.btn.primary {
+  background: linear-gradient(90deg, #00e0ff, #0077ff);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.3);
 }
-  
+
+.btn.primary:hover {
+  background: linear-gradient(90deg, #00b0ff, #0057ff);
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.6);
+}
+
 .btn.secondary {
-    background-color: #6c757d;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #00e0ff;
+  backdrop-filter: blur(10px);
 }
-  
+
 .btn.secondary:hover {
-    background-color: #5a6268;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
 }
-  
-/* Social icons */
+
+/* Socials */
 .socials {
-    margin-top: 2rem;
-    display: flex;
-    gap: 1.5rem;
+  display: flex;
+  gap: 1.8rem;
+  margin-top: 1.5rem;
 }
-  
+
 .socials a {
-    color: #333;
-    transition: color 0.3s ease;
+  color: #00e0ff;
+  transition: all 0.3s ease;
 }
-  
+
 .socials a:hover {
-    color: #1e90ff;
+  color: #fff;
+  transform: scale(1.15);
+  text-shadow: 0 0 10px rgba(0, 224, 255, 0.5);
 }
-  

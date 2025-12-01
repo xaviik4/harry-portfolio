@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './sections/Home';
 import About from './sections/About';
+import Experience from './sections/Experience';
 import Projects from './sections/Projects';
 import Photography from './sections/Photography';
 // import Content from './sections/Content';
@@ -22,6 +23,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Experience />
       <Projects />
       <Photography />
       {/* <Content /> */}

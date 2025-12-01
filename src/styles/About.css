@@ -1,121 +1,127 @@
-#about {
-    background: #f4f4f4;
-    padding: 4rem 2rem;
-    /* border-bottom: 2px solid #ddd; */
-  }
-  
-  #about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #222;
-    text-align: center;
-  }
-  
-  .about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    color: #444;
-    line-height: 1.8;
-    font-size: 1.1rem;
-  }
-  
-  .skills {
-    margin-top: 2rem;
-  }
-  
-  .skills h3 {
-    font-size: 1.5rem;
-    color: #111;
-    margin-bottom: 0.5rem;
-  }
-  
-  .skills ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .skills li {
-    margin-bottom: 0.5rem;
-    padding-left: 1rem;
-    position: relative;
-  }
-  
-  .skills li::before {
-    content: '🛠️';
-    position: absolute;
-    left: 0;
-  }
-  
-  .fun-facts {
-    margin-top: 2rem;
-  }
-  
-  .fun-facts h3 {
-    font-size: 1.5rem;
-    color: #111;
-    margin-bottom: 0.5rem;
-  }
-  
-  .about-cta {
-    margin-top: 2.5rem;
-    font-weight: 600;
-    color: #222;
-  }
-  
-  .skills {
-    margin-top: 2rem;
-  }
-  
-  .skills h3 {
-    font-size: 1.8rem;
-    color: #111;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
-    margin-top: 1rem;
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  }
-  
-  
-  .skills-grid h4 {
-    font-size: 1.3rem;
-    color: #222;
-    margin-bottom: 0.5rem;
-  }
-  
-  .skills-grid ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .skills-grid li {
-    margin-bottom: 0.4rem;
-    padding-left: 1.2rem;
-    position: relative;
-  }
+.about-section {
+  background: linear-gradient(135deg, #0a0a0f, #1a1a2e);
+  color: #e0e0e0;
+  padding: 4rem 2rem;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
 
-  .skill-column {
-    background-color: #f2f2f2;
-    padding: 1rem;
-    border-radius: 0.75rem;
-  }
+.section-title.neon {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #00e0ff;
+  text-shadow: 0 0 8px rgba(0, 224, 255, 0.6);
+}
 
-  .skills-grid li:hover {
-    color: #0077cc;
-    transform: translateX(4px);
-    transition: all 0.2s ease;
-  }
-  
-  .skills-grid li::before {
-    content: '🔹'; /* ' ➤ ' or '🔹', or comment it out for no icon */
-    color: #555555;
-  }
-  
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  text-align: center;
+  color: #dcdcdc;
+}
+
+/* Core sections */
+.skills,
+.fun-facts,
+.about-cta {
+  margin-top: 3rem;
+}
+
+/* Sub-headings */
+.skills h3,
+.fun-facts h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #8bbdd9;
+  margin-bottom: 1.2rem;
+}
+
+/* Skill grid container */
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* equal height columns */
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 224, 255, 0.08);
+}
+
+/* Equal height glass cards */
+.skill-column {
+  flex: 1 1 300px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 320px;
+  transition: all 0.3s ease;
+}
+
+.skill-column:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Skill headers */
+.skill-column h4 {
+  font-size: 1.3rem;
+  color: #00e0ff;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+/* Skill list */
+.skill-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.skill-column li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #dcdcdc;
+  transition: all 0.2s ease;
+}
+
+.skill-column li::before {
+  content: '🔹';
+  position: absolute;
+  left: 0;
+  color: #00e0ff;
+}
+
+/* Hover interaction */
+.skill-column li:hover {
+  color: #00e0ff;
+  transform: translateX(5px);
+}
+
+/* Fun facts + CTA text */
+.fun-facts p,
+.about-cta p {
+  color: #dcdcdc;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.about-cta {
+  margin-top: 3rem;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+}

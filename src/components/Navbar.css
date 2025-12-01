@@ -1,62 +1,21 @@
 nav {
-    background-color: #0f0f0f;
-    padding: 1rem 2rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 0.75rem 2rem;
+  transition: background 0.3s ease;
+}
+
 .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-  
-.logo {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-  
-nav ul {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-}
-  
-nav ul li a {
-    text-decoration: none;
-    color: #d1d1d1;
-    padding: 0.2rem 0;
-    font-size: 1rem;
-    font-weight: 500;
-    position: relative;
-    /* padding: 5px 0; */
-}
-  
-nav ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0%;
-    background-color: #00bfff;
-    transition: width 0.3s ease-in-out;
-}
-  
-nav ul li a:hover::after {
-    width: 100%;
-}
-  
-nav ul li a:hover {
-    color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-left {
@@ -66,9 +25,67 @@ nav ul li a:hover {
 }
 
 .nav-image {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  color: #e0e0e0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+/* Navigation links */
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d0d0d0;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0%;
+  background-color: #00e0ff;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Slight scroll change */
+nav.scrolled {
+  background: rgba(10, 10, 15, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
 }

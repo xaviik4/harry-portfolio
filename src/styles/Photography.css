@@ -1,53 +1,83 @@
-#photography {
-    background: #f4f4f4;
-    padding: 4rem 2rem;
-    border-bottom: 2px solid #ddd;
-    text-align: center;
+.photography-section {
+  background: linear-gradient(135deg, #0a0a0f, #1a1a2e);
+  padding: 4rem 2rem;
+  color: #e0e0e0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section-title.neon {
+  font-size: 2.5rem;
+  color: #00e0ff;
+  text-shadow: 0 0 10px rgba(0, 224, 255, 0.6);
+  margin-bottom: 1.5rem;
+}
+
+.photo-intro {
+  max-width: 750px;
+  margin: 0 auto 3rem auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #cfcfcf;
+}
+
+/* Infinite scroll container */
+.infinite-scroll-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.photo-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-loop 40s linear infinite;
+  transition: all 0.8s ease; /* adds a subtle deceleration */
+}
+
+/* 🕊 Smooth pause on hover */
+.infinite-scroll-container:hover .photo-track {
+  animation-play-state: paused;
+  transition: transform 0.8s ease-in-out;
+}
+
+@keyframes scroll-loop {
+  0% {
+    transform: translateX(0);
   }
-  
-  #photography h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #222;
-    font-family: 'Georgia', serif;
+  100% {
+    transform: translateX(-50%);
   }
-  
-  .photo-intro {
-    max-width: 700px;
-    margin: 0 auto 2rem auto;
-    font-size: 1.1rem;
-    color: #444;
-    line-height: 1.6;
+}
+
+.photo-card {
+  flex: 0 0 auto;
+  width: 350px;
+  height: 350px;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.photo-card:hover {
+  background: rgba(0, 224, 255, 0.15);
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .photo-card {
+    width: 250px;
+    height: 250px;
+    margin: 0 0.75rem;
   }
-  
-  .photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.2rem;
-    padding: 1rem 0;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .photo-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 1rem;
-    aspect-ratio: 1 / 1;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 1rem;
-    transition: transform 0.3s ease;
-  }
-  
-  .photo-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 113, 200, 0.5); /* peachy glow */
-  }
-  
+}

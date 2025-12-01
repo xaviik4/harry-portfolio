@@ -1,18 +1,24 @@
 {
   "files": {
-    "main.css": "/harry-portfolio/static/css/main.e843aeda.css",
-    "main.js": "/harry-portfolio/static/js/main.95d025c8.js",
+    "main.css": "/harry-portfolio/static/css/main.11d0bd09.css",
+    "main.js": "/harry-portfolio/static/js/main.7319f75a.js",
     "static/media/OSUgame.jpg": "/harry-portfolio/static/media/OSUgame.8c8af5e92064739fc934.jpg",
     "static/media/carshoot.jpg": "/harry-portfolio/static/media/carshoot.a37ccd0ddc2b5e8e227f.jpg",
+    "static/media/culebra.jpg": "/harry-portfolio/static/media/culebra.048f0c46b7dadb67ee68.jpg",
     "static/media/bbqpic.jpg": "/harry-portfolio/static/media/bbqpic.35eb1da201f10bd0ee9c.jpg",
     "static/media/pfp.jpg": "/harry-portfolio/static/media/pfp.3d14d2d77008cc878a14.jpg",
+    "static/media/festival.jpg": "/harry-portfolio/static/media/festival.ce07257ffd59fb1df23f.jpg",
     "static/media/logonav.jpg": "/harry-portfolio/static/media/logonav.453a71876f6129227b28.jpg",
+    "static/media/osu.svg": "/harry-portfolio/static/media/osu.2161f69f65ea1be8a93264ed2ac83dce.svg",
+    "static/media/purdue.svg": "/harry-portfolio/static/media/purdue.302bb906d526dec2b48c8b912ac85c65.svg",
+    "static/media/avangrid.svg": "/harry-portfolio/static/media/avangrid.eb756b30aee41fe85968668da0603c4b.svg",
     "index.html": "/harry-portfolio/index.html",
-    "main.e843aeda.css.map": "/harry-portfolio/static/css/main.e843aeda.css.map",
-    "main.95d025c8.js.map": "/harry-portfolio/static/js/main.95d025c8.js.map"
+    "static/media/genentech.svg": "/harry-portfolio/static/media/genentech.8c16836eb0d75320d32e820c01b6fe56.svg",
+    "main.11d0bd09.css.map": "/harry-portfolio/static/css/main.11d0bd09.css.map",
+    "main.7319f75a.js.map": "/harry-portfolio/static/js/main.7319f75a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e843aeda.css",
-    "static/js/main.95d025c8.js"
+    "static/css/main.11d0bd09.css",
+    "static/js/main.7319f75a.js"
   ]
 }

@@ -1,4 +1,3 @@
-// harry-portfolio/src/sections/About.js
 import React from 'react';
 import '../styles/About.css';
 
@@ -9,9 +8,8 @@ const About = () => {
 
       <div className="about-content">
         <p className="about-intro">
-          I’m a junior at Oregon State University studying Electrical and Computer Engineering. 
-          I specialize in electronics, embedded systems, and solving real-world technical problems. 
-          I’m passionate about energy storage, sustainability, and automation — always learning, always building.
+          I’m a fourth-year Electrical and Computer Engineering student at Oregon State University interested in systems engineering, power systems, and embedded hardware. I’ve gained experience through substation protection work at Avangrid, internal engineering tooling at Genentech, and hands-on hardware projects at OSU.
+          I like building technology that’s reliable, practical, and grounded in real needs. I’m motivated by learning, improving my skills, and contributing to projects with real impact. I value clear communication, teamwork, and solving problems with intention, and I’m working toward a career where I can grow while contributing to meaningful engineering work.
         </p>
 
         <div className="skills">
@@ -23,41 +21,53 @@ const About = () => {
               <ul>
                 <li>Python</li>
                 <li>C/C++</li>
-                <li>HTML & CSS</li>
                 <li>MATLAB</li>
+                <li>HTML & CSS</li>
                 <li>SystemVerilog</li>
                 <li>Circuit Design</li>
+                <li>Embedded Systems</li>
+                <li>Signal Processing Fundamentals</li>
               </ul>
             </div>
 
             <div className="skill-column glass-card">
               <h4>🛠️ Tools & Platforms</h4>
               <ul>
-                <li>ServiceNow</li>
-                <li>Arduino</li>
-                <li>LTSpice</li>
+                <li>AutoCAD</li>
                 <li>KiCad</li>
-                <li>Microsoft Office</li>
+                <li>LTSpice</li>
+                <li>MathCAD</li>
+                <li>SEL AcSELerator</li>
+                <li>ServiceNow</li>
+                <li>GitHub Pages / React</li>
+              </ul>
+            </div>
+
+            <div className="skill-column glass-card">
+              <h4>⚡ Hardware & Power Systems</h4>
+              <ul>
+                <li>Oscilloscopes</li>
+                <li>Multimeters</li>
+                <li>PCB Design & Debug</li>
+                <li>Protective Relays (SEL-751)</li>
+                <li>Power & AC/DC System Fundamentals</li>
+                <li>Sensor Integration</li>
               </ul>
             </div>
           </div>
         </div>
 
         <div className="fun-facts">
-          <h3 className="sub-title">Outside the Lab...</h3>
+          <h3 className="sub-title">Beyond engineering...</h3>
           <p>
-            I enjoy working out, hiking around Oregon, and playing or watching basketball. 
-            I’m passionate about photography and creativity through tech and art. 
-            Music drives my mindset, and being Puerto Rican keeps me grounded and proud of my roots. 
-            Outside of that, I’m big on self-improvement — whether it’s learning new tech skills, pushing myself physically, or chasing creative challenges.
+            I stay active through the gym and exploring Oregon’s trails, and I enjoy photography as a way to slow down and capture moments that matter to me. Being Puerto Rican is a big part of who I am and keeps me connected to my culture and community. I care a lot about improving myself, whether it’s learning new tech skills, getting stronger, or taking on creative challenges that push me forward.
           </p>
         </div>
 
         <div className="about-cta">
+          <h3 className="sub-title">What I’m Working Toward</h3>
           <p>
-            I’m passionate about energy systems, automation, and using technology to build creative solutions. 
-            I’m always looking for new challenges and chances to grow — whether it’s building, learning, or collaborating. 
-            Always excited to connect, create, and keep learning.
+            I’m passionate about energy systems, automation, and using technology to create practical, meaningful solutions. I’m always looking for challenges that help me grow, whether it’s learning new tools, building something from scratch, or collaborating with others. Always learning, always improving.
           </p>
         </div>
       </div>

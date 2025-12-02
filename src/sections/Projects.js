@@ -7,13 +7,13 @@ const projects = [
   {
     title: 'Portfolio Website',
     description:
-      'Designed and built this personal site to showcase my engineering work, creative projects, and professional experience using React and GitHub Pages.',
+      'Designed and built this personal site to showcase my engineering work and projects. Built using React, JavaScript, HTML/CSS, and deployed with GitHub Pages.',
     link: 'https://github.com/xaviik4/harry-portfolio',
   },
   {
     title: 'Being built...',
     description:
-      'More projects are in progress — focusing on embedded systems, automation, and energy tech.',
+      'More projects are in progress...',
   },
 ];
 

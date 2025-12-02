@@ -1,83 +1,166 @@
-.photography-section {
+.photography-dynamic {
+  position: relative;
   background: linear-gradient(135deg, #0a0a0f, #1a1a2e);
-  padding: 4rem 2rem;
   color: #e0e0e0;
-  text-align: center;
+  padding: 6rem 2rem;
   overflow: hidden;
+  text-align: center;
 }
 
-.section-title.neon {
-  font-size: 2.5rem;
-  color: #00e0ff;
-  text-shadow: 0 0 10px rgba(0, 224, 255, 0.6);
-  margin-bottom: 1.5rem;
+/* --- Header --- */
+.photo-header {
+  position: relative;
+  z-index: 3;
+  margin-bottom: 2.5rem;
 }
 
 .photo-intro {
-  max-width: 750px;
-  margin: 0 auto 3rem auto;
+  max-width: 700px;
+  margin: 1rem auto;
   font-size: 1.1rem;
-  line-height: 1.7;
   color: #cfcfcf;
+  line-height: 1.7;
 }
 
-/* Infinite scroll container */
-.infinite-scroll-container {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.photo-track {
+/* --- Social Links --- */
+.photo-socials {
   display: flex;
-  width: max-content;
-  animation: scroll-loop 40s linear infinite;
-  transition: all 0.8s ease; /* adds a subtle deceleration */
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.8rem;
 }
 
-/* 🕊 Smooth pause on hover */
-.infinite-scroll-container:hover .photo-track {
-  animation-play-state: paused;
-  transition: transform 0.8s ease-in-out;
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 224, 255, 0.1);
+  border: 1px solid rgba(0, 224, 255, 0.3);
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  color: #00e0ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-@keyframes scroll-loop {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.social-btn:hover {
+  background: rgba(0, 224, 255, 0.2);
+  transform: translateY(-2px);
 }
 
-.photo-card {
-  flex: 0 0 auto;
-  width: 350px;
-  height: 350px;
-  margin: 0 1rem;
+/* --- Gear Section --- */
+.gear-section {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  background: rgba(255, 255, 255, 0.04);
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(10px);
+  padding: 2rem;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.08);
+}
+
+.gear-title {
+  font-size: 1.6rem;
+  color: #8bbdd9;
+  margin-bottom: 1rem;
+}
+
+.gear-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gear-item {
+  margin: 1rem 0;
+}
+
+.gear-item a {
+  color: #00e0ff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: color 0.3s;
+}
+
+.gear-item a:hover {
+  color: #8bbdd9;
+}
+
+.gear-item p {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+/* --- Wavy Line Background --- */
+.photo-line-background {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wavy-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 200%;
+  opacity: 0.3;
+  z-index: 1;
+  transition: transform 0.3s ease-out;
+}
+
+/* --- Gallery --- */
+.photo-focus-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  position: relative;
+  z-index: 2;
+}
+
+.photo-wrapper {
+  width: 70%;
+  max-width: 700px;
+  border-radius: 1rem;
   overflow: hidden;
-  transition: background 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 224, 255, 0.08);
+  transition: all 1s ease;
 }
 
-.photo-card:hover {
-  background: rgba(0, 224, 255, 0.15);
-}
-
-.photo {
+.photo-dynamic {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-  border-radius: 1rem;
+  opacity: 0.4;
+  transform: scale(0.95);
+  transition: transform 1.6s ease, opacity 1.6s ease;
 }
 
+.photo-dynamic.active {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+/* --- Responsive --- */
 @media (max-width: 768px) {
-  .photo-card {
-    width: 250px;
-    height: 250px;
-    margin: 0 0.75rem;
+  .photo-wrapper {
+    width: 90%;
+  }
+
+  .photo-socials {
+    flex-direction: column;
+  }
+
+  .gear-section {
+    padding: 1.5rem;
   }
 }

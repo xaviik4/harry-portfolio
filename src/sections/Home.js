@@ -15,7 +15,7 @@ const Home = () => {
         Electrical & Computer Engineering @ Oregon State University | HSF Scholar
       </p>
       <p className="home-description">
-        Engineering student passionate about automation, energy systems, and building technology that makes an impact.
+        Engineering student focused on power systems, embedded hardware, and building reliable real-world technology.
       </p>
 
       <div className="cta-buttons">

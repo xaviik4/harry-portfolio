@@ -1,19 +1,30 @@
 // harry-portfolio/src/sections/Projects.js
 import React from 'react';
 import '../styles/Projects.css';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
-    title: 'Portfolio Website',
+    title: 'Yahar\'gul Dual Axis Automaton',
     description:
-      'Designed and built this personal site to showcase my engineering work and projects. Built using React, JavaScript, HTML/CSS, and deployed with GitHub Pages.',
-    link: 'https://github.com/xaviik4/harry-portfolio',
+      'A two-axis SCARA robotic arm that draws shapes from G-code commands. Built with an ESP32 microcontroller, Python GUI, Bluetooth communication, inverse kinematics, and custom PCB with high-torque servo motors.',
+    tech: ['C++', 'Python', 'ESP32', 'PCB Design', 'Bluetooth'],
+    link: 'https://projects.engineering.oregonstate.edu/projects/?id=yaJ5NIZFUFiaf3KM',
+    linkType: 'showcase',
   },
   {
-    title: 'Being built...',
+    title: 'Accelerometer-Based Monitoring Device',
     description:
-      'More projects are in progress...',
+      'A vibration monitoring system using an MPU-6050 accelerometer with a custom KiCad PCB. Implemented I²C communication, real-time data processing, and validation for accuracy and update rate requirements.',
+    tech: ['KiCad', 'C/C++', 'I²C', 'Embedded Systems', 'PCB Design'],
+  },
+  {
+    title: 'Portfolio Website',
+    description:
+      'This personal site, built to showcase engineering work, photography, and projects. Designed with React and deployed on GitHub Pages.',
+    tech: ['React', 'JavaScript', 'CSS', 'GitHub Pages'],
+    link: 'https://github.com/xaviik4/harry-portfolio',
+    linkType: 'github',
   },
 ];
 
@@ -28,7 +39,14 @@ const Projects = () => {
             <div key={idx} className="project-card">
               <h3>{proj.title}</h3>
               <p>{proj.description}</p>
-              {proj.link && (
+              {proj.tech && (
+                <div className="project-tech">
+                  {proj.tech.map((t, i) => (
+                    <span key={i} className="tech-tag">{t}</span>
+                  ))}
+                </div>
+              )}
+              {proj.link && proj.linkType === 'github' && (
                 <a
                   href={proj.link}
                   target="_blank"
@@ -36,6 +54,16 @@ const Projects = () => {
                   className="project-link"
                 >
                   <FaGithub /> View on GitHub
+                </a>
+              )}
+              {proj.link && proj.linkType === 'showcase' && (
+                <a
+                  href={proj.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <FaExternalLinkAlt /> View Showcase
                 </a>
               )}
             </div>

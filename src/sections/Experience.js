@@ -7,6 +7,7 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
+import lockheedLogo from '../assets/lockheed.svg';
 import genentechLogo from '../assets/genentech.svg';
 import avangridLogo from '../assets/avangrid.svg';
 import osuLogo from '../assets/osu.svg';
@@ -14,20 +15,28 @@ import purdueLogo from '../assets/purdue.svg';
 
 const experiences = [
   {
-    title: 'Substation Operations Intern',
+    title: 'Systems Engineer Intern',
+    company: 'Lockheed Martin',
+    date: 'Jun 2026 – Present',
+    logo: lockheedLogo,
+    description:
+      'Working on systems engineering in a defense and aerospace environment.',
+  },
+  {
+    title: 'Protection and Controls Engineering Intern',
     company: 'Avangrid',
     date: 'Jun 2025 – Aug 2025',
     logo: avangridLogo,
     description:
-      'Worked on substation protection systems involving breaker-event analysis, relay settings, AutoCAD markups, and GIS/SF₆ equipment. Gained experience applying systems thinking and understanding how grid equipment behaves in real operating conditions.',
+      'Consolidated substation regions from five to four to improve breaker-event traceability. Updated one-line, wiring, and elementary diagrams in AutoCAD across multiple substations. Integrated low-low SF₆ gas gauges into GIS protection logic and configured relay settings using MathCAD and SEL AcSELerator QuickSet.',
   },
   {
-    title: 'Systems & Controls Engineering Intern',
+    title: 'Systems and Controls Support Intern',
     company: 'Genentech',
     date: 'May 2024 – Aug 2024',
     logo: genentechLogo,
     description:
-      'Built internal tools in ServiceNow and front-end features that improved communication and reduced errors for engineering teams. Learned how technical workflows operate inside a large biotech environment and how different groups coordinate changes.',
+      'Built 20+ ServiceNow-integrated forms that reduced request errors and improved communication for systems and control engineers. Developed front-end features that streamlined internal workflows across engineering, automation, and quality-assurance teams.',
   },
   {
     title: 'B.S. Electrical & Computer Engineering',
@@ -35,7 +44,7 @@ const experiences = [
     date: 'Sep 2024 – Jun 2027',
     logo: osuLogo,
     description:
-      'At OSU, I’ve focused on hands-on engineering through labs in circuits, embedded systems, and power electronics. My main project is a vibration monitoring device built with a custom KiCad PCB and an MPU-6050 accelerometer. These courses and projects have helped me understand how hardware and software come together in real applications.',
+      'Focused on hands-on engineering through labs in circuits, embedded systems, and power electronics. Completed junior design projects including an accelerometer-based monitoring device and a dual-axis SCARA robotic arm. Active member of the Society of Hispanic Professional Engineers (SHPE).',
   },
   {
     title: 'B.S. Computer Engineering (Transferred)',
@@ -43,7 +52,7 @@ const experiences = [
     date: 'Jul 2022 – May 2024',
     logo: purdueLogo,
     description:
-      'At Purdue, I worked on research exploring how engineering students learn and collaborate in different cultural settings. I analyzed TLBB and CQS datasets, built data visualizations in R, and helped study team behaviors across global environments. I also contributed to a project exploring VR as a tool for supporting students with social anxiety, and presented both sets of work at Purdue’s research showcases.',
+      'Conducted research on team learning behaviors and cultural intelligence in engineering education using R. Explored VR as a tool for supporting students with social anxiety and presented findings at Purdue\'s Spring Undergraduate Research Conference and I2D Expo. Built a responsive website for Purdue\'s CAM2 research lab.',
   },
 ];
 

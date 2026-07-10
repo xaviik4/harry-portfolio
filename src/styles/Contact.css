@@ -1,0 +1,89 @@
+.contact-section {
+  background: linear-gradient(135deg, #0a0a0f, #1a1a2e);
+  color: #e0e0e0;
+  padding: 5rem 2rem;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.contact-intro {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  color: #cfcfcf;
+  line-height: 1.7;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  flex: 1 1 300px;
+  max-width: 360px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: #00e0ff;
+}
+
+.contact-card h3 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0;
+}
+
+.contact-card p {
+  font-size: 0.95rem;
+  color: #cfcfcf;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  border: 1px solid #00e0ff;
+  border-radius: 8px;
+  color: #00e0ff;
+  background: rgba(0, 224, 255, 0.1);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #00e0ff;
+  color: #0a0a0f;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

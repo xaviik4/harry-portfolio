@@ -7,7 +7,13 @@ nav {
   top: 0;
   z-index: 1000;
   padding: 0.75rem 2rem;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+nav.scrolled {
+  background: rgba(10, 10, 15, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.5rem 2rem;
 }
 
 .nav-container {
@@ -29,6 +35,11 @@ nav {
   height: 42px;
   border-radius: 50%;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+nav.scrolled .nav-image {
+  transform: scale(0.9);
 }
 
 .logo {
@@ -39,7 +50,7 @@ nav {
   text-transform: uppercase;
 }
 
-/* Navigation links */
+/* Navigation Links */
 nav ul {
   display: flex;
   gap: 2rem;
@@ -55,6 +66,7 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 
+/* Underline animation */
 nav ul li a::after {
   content: "";
   position: absolute;
@@ -66,26 +78,23 @@ nav ul li a::after {
   transition: width 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
   color: #ffffff;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.active::after {
   width: 100%;
 }
 
-/* Slight scroll change */
-nav.scrolled {
-  background: rgba(10, 10, 15, 0.95);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-/* Mobile responsiveness */
+/* Mobile */
 @media (max-width: 768px) {
   nav ul {
     display: none;
   }
+
   .logo {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }

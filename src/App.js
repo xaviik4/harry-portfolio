@@ -8,8 +8,8 @@ import About from './sections/About';
 import Experience from './sections/Experience';
 import Projects from './sections/Projects';
 import Photography from './sections/Photography';
-// import Content from './sections/Content';
 import Contact from './sections/Contact';
+import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
@@ -26,8 +26,8 @@ function App() {
       <Experience />
       <Projects />
       <Photography />
-      {/* <Content /> */}
-      {/* <Contact /> */}
+      <Contact />
+      <Footer />
     </>
   );
 }
